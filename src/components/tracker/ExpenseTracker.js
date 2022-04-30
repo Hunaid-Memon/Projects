@@ -26,17 +26,21 @@ const ExpenseTracker = () => {
         if(!desc && !value) {
             alert('Plz Enter form')
         }
-        else if (desc && value && !toggleSubmit) {
-            console.log(desc, value, toggleSubmit);
+        else if (desc && value && toggleSubmit) {
             setTransactions(
                 transactions.map(transaction => {
                     if(transaction.id === isEditItem) {
-                        console.log(transaction.id );
-                        return {...transaction }
+                       console.log('update',transaction.id);
+                       return {...transaction, description: desc, amount: +value }
                     }
-                    return transaction
+
+                    return transaction;
                 })
             )
+            setToggleSubmit(true);
+            setDesc('');
+            setValue('');
+            setIsEditItem(null)
         }
         else {
             const newTransaction = {
