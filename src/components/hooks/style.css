@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.div-center {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.div-value {
+    padding: 25px;
+    background-color: azure;
+    margin: 25px;
+    border-radius: 10px;
+}
+
+.div-value h2 {
+    font-size: 60px;
+}
+
+
+.btn-div button {
+    padding: 25px;
+    margin: 15px;
+    border-radius: 10px;
+    font-size: 30px;
+    border: 2px dotted grey;
+    cursor: pointer;
+    background-color: aqua;
+    transform: scaleY(0.75);
+}
+

@@ -1,4 +1,4 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -47,7 +47,7 @@ html {
   color: #aaa;
 }
 
-.main-card--cointainer {
+.main-card-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 500px));
   grid-gap: 50px;
@@ -235,4 +235,4 @@ html {
 .btn-group__item--active:after {
   opacity: 1;
   transform: translatey(-2px);
-} */
+}
